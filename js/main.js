@@ -1,5 +1,5 @@
 const burgerBtn = document.querySelector(".header__burger-btn");
-const openMenu = document.querySelector(".header__mobile-menu-content");
+const openMenu = document.querySelector(".mobile-menu");
 
 burgerBtn.addEventListener("click", () => {
   openMenu.classList.toggle("is-open");
