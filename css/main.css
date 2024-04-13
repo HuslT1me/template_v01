@@ -411,8 +411,8 @@ a {
     padding-block: 10px;
   }
 
-  .header__both-inner {
-    height: 53px;
+  .header__both-inner ul {
+    height: 47px;
     overflow: hidden;
   }
 
