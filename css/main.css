@@ -98,6 +98,7 @@ a {
   align-items: center;
   justify-content: end;
   column-gap: 20px;
+  min-height: 62px;
 }
 
 .header__burger-btn {
@@ -112,11 +113,12 @@ a {
 .header__nav-link {
   text-transform: uppercase;
   color: var(--color-light);
-  padding: clamp(8px, 1.19vw, 20px);
+  padding: 20px clamp(8px, 1.19vw, 20px);
   font-size: clamp(16px, 1.07vw, 18px);
   display: flex;
   align-items: center;
   transition: 0.5s;
+  min-height: 62px;
 }
 
 .nav-link--categories::before {
@@ -259,6 +261,7 @@ a {
   transition: var(--transition-duration);
   border-radius: var(--rounded-strong);
   background-color: var(--color-light);
+  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.03);
   padding: 9px 7px;
 }
 
@@ -371,7 +374,7 @@ a {
 /* alphabet end */
 
 .about {
-  margin-bottom: 40px;
+  margin-bottom: 110px;
 }
 
 .about__inner p {
@@ -394,6 +397,11 @@ a {
   column-gap: 25px;
   text-transform: uppercase;
   flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.footer__top-content a {
+  color: var(--color-light);
 }
 
 .footer__bottom-content {
@@ -413,6 +421,11 @@ a {
   }
 
   .header__nav-item {
+    padding-block: 10px;
+  }
+
+  .header__nav-link {
+    min-height: auto;
     padding-block: 10px;
   }
 
@@ -489,6 +502,10 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .about {
+    margin-bottom: 70px;
+  }
+
   .about__inner p {
     font-weight: 400;
   }
@@ -497,12 +514,16 @@ a {
     margin-bottom: 15px;
   }
 
-  .footer__top-content p {
+  .footer__top-content a {
     margin-bottom: 10px;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   .footer__bottom-content p {
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 400;
   }
 }
@@ -519,6 +540,14 @@ a {
 
   .alphabet__grid-letters {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    margin-bottom: 40px;
+  }
+
+  .about__inner p {
+    font-size: 18px;
   }
 }
 
@@ -616,6 +645,11 @@ a {
     color: var(--main-color);
     transition: var(--transition-duration);
   }
+
+  .footer__top-content a:hover {
+    color: var(--main-color);
+    transition: var(--transition-duration);
+  }
 }
 
 @media (hover: none) {
@@ -655,5 +689,9 @@ a {
   .alphabet__list-wrapper a:active + p {
     color: var(--main-color);
     transition: var(--transition-duration);
+  }
+
+  .footer__top-content a:active {
+    color: var(--main-color);
   }
 }
