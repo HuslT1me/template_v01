@@ -1,7 +1,8 @@
 const burgerBtn = document.querySelector(".header__burger-btn"),
   openMenu = document.querySelector(".mobile-menu"),
   openCategoriesBtn = document.querySelector(".nav-link--categories"),
-  categoriesPopup = document.querySelector(".open-categories-popup");
+  categoriesPopup = document.querySelector(".open-categories-popup"),
+  tabsVideo = document.querySelectorAll(".categories__tabs-item");
 
 burgerBtn.addEventListener("click", () => {
   openMenu.classList.toggle("is-open");
@@ -26,3 +27,10 @@ openCategoriesBtn.addEventListener("click", (e) => {
   // })
 });
 
+for (let i = 0; i < tabsVideo.length; i++) {
+  tabsVideo[i].addEventListener("click", (btns) => {
+    btns.preventDefault();
+
+    tabsVideo[i].classList.add("tab--active");
+  });
+}

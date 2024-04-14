@@ -647,6 +647,11 @@ a {
     right: auto;
   }
 
+  .categories__tabs-item:hover {
+    transition: var(--transition-duration);
+    border: 1px solid var(--main-color);
+  }
+
   .categories__item:hover {
     box-shadow: 4px 4px 12px 0px #00000033;
   }
