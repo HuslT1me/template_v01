@@ -22,6 +22,23 @@
   color: var(--color-light);
 }
 
+#tab1 {
+  display: none;
+}
+
+#tab2 {
+  display: none;
+}
+
+#tab3 {
+  display: none;
+}
+.content--active#tab1,
+.content--active#tab2,
+.content--active#tab3 {
+  display: grid;
+}
+
 .categories__item {
   position: relative;
 }
