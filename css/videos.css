@@ -22,20 +22,19 @@
   color: var(--color-light);
 }
 
-#tab1 {
+#tab1,
+#tab2,
+#tab3,
+#tab4,
+#tab5 {
   display: none;
 }
 
-#tab2 {
-  display: none;
-}
-
-#tab3 {
-  display: none;
-}
 .content--active#tab1,
 .content--active#tab2,
-.content--active#tab3 {
+.content--active#tab3,
+.content--active#tab4,
+.content--active#tab5 {
   display: grid;
 }
 
