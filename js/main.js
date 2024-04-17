@@ -3,7 +3,8 @@ const burgerBtn = document.querySelector(".header__burger-btn"),
   openCategoriesBtn = document.querySelector(".nav-link--categories"),
   categoriesPopup = document.querySelector(".open-categories-popup"),
   tabsVideo = document.querySelectorAll(".categories__tabs-item"),
-  tabsContent = document.querySelectorAll(".categories__thumbnail");
+  tabsContent = document.querySelectorAll(".categories__thumbnail"),
+  btnCategory = document.querySelector(".btn-categories");
 
 burgerBtn.addEventListener("click", () => {
   openMenu.classList.toggle("is-open");
@@ -30,11 +31,13 @@ const popupFunction = () => {
 
   function openPopup(evt) {
     categoriesPopup.classList.add("is-open");
+    btnCategory.classList.add("is-active");
     window.addEventListener("click", clickWithoutPopup);
   }
 
   function closePopup(evt) {
     categoriesPopup.classList.remove("is-open");
+    btnCategory.classList.remove("is-active");
     window.removeEventListener("click", clickWithoutPopup);
   }
 
@@ -78,21 +81,48 @@ if (tabAlone) {
   tabAlone.click();
 }
 
-
 const playButton = document.querySelector(".player__btn-play");
 const video = document.querySelector(".player__video");
 const videoContainer = document.querySelector(".player__video-wrapper");
 
-videoContainer.addEventListener("click", evt => {
-  evt.preventDefault();
+const playVideo = () => {
+  videoContainer.addEventListener("click", (evt) => {
+    evt.preventDefault();
 
-    if(evt.target.closest('.player__video') || evt.target.closest('.player__btn-play')) {
-        if (video.paused === true) {
-            video.play();
-            playButton.classList.add('hide');
-        } else {
-            video.pause();
-            playButton.classList.remove('hide');
-        }
+    if (
+      evt.target.closest(".player__video") ||
+      evt.target.closest(".player__btn-play")
+    ) {
+      if (video.paused === true) {
+        video.play();
+        playButton.classList.add("hide");
+      } else {
+        video.pause();
+        playButton.classList.remove("hide");
+      }
     }
-});
+  });
+};
+
+if (video) {
+  playVideo();
+}
+
+const openDropDownMobile = () => {
+  const mobileBtnCategory = document.querySelector(".btn-categories-mobile"),
+    openDropdown = document.querySelector(".header__categories-mobile");
+
+  mobileBtnCategory.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    mobileBtnCategory.classList.toggle("is-active");
+    openDropdown.classList.toggle("is-open");
+
+  });
+  if (openMenu !== "is-open") {
+    openDropdown.classList.remove("is-open");
+  }
+};
+
+openDropDownMobile();
