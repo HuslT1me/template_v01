@@ -409,7 +409,7 @@ a {
 .title-wrapper {
   border-bottom: var(--strong-border) solid var(--main-color);
   padding-block: var(--title-block-padding);
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .section-title {
