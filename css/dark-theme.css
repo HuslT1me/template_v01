@@ -6,7 +6,7 @@
   --color-light: #ffffff;
   --color-light-alternate: #fafafa;
   --body-dark-theme: #353535;
-  --main-color: #dd1581;
+  --main-color: #F46803;
 
   --bg-inputs: #d9d9d9;
 
@@ -274,6 +274,7 @@ a {
   outline: none;
   border: none;
   padding-inline: 12px 47px;
+  font-weight: 400;
 }
 
 .header__search-input:focus {
@@ -299,6 +300,7 @@ a {
   color: var(--color-light);
   display: inline-flex;
   position: relative;
+  font-weight: 400;
 }
 
 .header__both-inner a::after {
@@ -502,6 +504,8 @@ a {
   width: 19px;
   aspect-ratio: 1/1;
   margin-right: 5px;
+  color: var(--main-color);
+  fill: var(--main-color);
 }
 
 /* popular end */
