@@ -4,7 +4,8 @@ const burgerBtn = document.querySelector(".header__burger-btn"),
   categoriesPopup = document.querySelector(".open-categories-popup"),
   tabsVideo = document.querySelectorAll(".categories__tabs-item"),
   tabsContent = document.querySelectorAll(".categories__thumbnail"),
-  btnCategory = document.querySelector(".btn-categories");
+  btnCategory = document.querySelector(".btn-categories"),
+  openDropdown = document.querySelector(".header__categories-mobile");
 
 burgerBtn.addEventListener("click", () => {
   openMenu.classList.toggle("is-open");
@@ -14,6 +15,10 @@ burgerBtn.addEventListener("click", () => {
     document.body.style.overflow = null;
   } else {
     document.body.style.overflow = "hidden";
+  }
+
+  if (!burgerBtn.classList.contains("is-active")) {
+    openDropdown.classList.remove("is-open");
   }
 });
 
@@ -72,9 +77,6 @@ const onTabClick = () => {
   }
 };
 
-popupFunction();
-onTabClick();
-
 const tabAlone = document.querySelector(".categories__tabs-item");
 
 if (tabAlone) {
@@ -109,8 +111,7 @@ if (video) {
 }
 
 const openDropDownMobile = () => {
-  const mobileBtnCategory = document.querySelector(".btn-categories-mobile"),
-    openDropdown = document.querySelector(".header__categories-mobile");
+  const mobileBtnCategory = document.querySelector(".btn-categories-mobile");
 
   mobileBtnCategory.addEventListener("click", (e) => {
     e.preventDefault();
@@ -119,10 +120,10 @@ const openDropDownMobile = () => {
     mobileBtnCategory.classList.toggle("is-active");
     openDropdown.classList.toggle("is-open");
 
+    console.log(e.tather);
   });
-  if (openMenu !== "is-open") {
-    openDropdown.classList.remove("is-open");
-  }
 };
 
 openDropDownMobile();
+popupFunction();
+onTabClick();

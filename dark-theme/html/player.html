@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TemplateV01</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
-  >
-    <link rel="stylesheet" href="../css/index-dark-theme.css">
+    />
+    <link rel="stylesheet" href="../css/index-dark-theme.css" />
   </head>
   <body>
     <header class="header">
@@ -18,7 +18,7 @@
         <div class="container">
           <div class="header__content">
             <a href="#" class="header__logo-link">
-              <img src="../media/icons/logo.svg" alt="TemplateV01-logo" class="header__logo">
+              <p class="header__logo"><span class="header__logo-item">Template</span>V01</p>
             </a>
             <div class="header__menu">
               <div class="header__wrapper-inner">
@@ -211,7 +211,7 @@
                   </ul>
                 </nav>
                 <div class="header__input-wrapper">
-                  <input class="header__search-input" type="text" placeholder="Type Here" maxlength="50">
+                  <input class="header__search-input" type="text" placeholder="Type Here" maxlength="50" />
                 </div>
               </div>
               <div class="header__mobile-menu">
@@ -411,7 +411,7 @@
                     </ul>
                   </nav>
                   <div class="header__input-wrapper">
-                    <input class="header__search-input" type="text" placeholder="Type Here" maxlength="50">
+                    <input class="header__search-input" type="text" placeholder="Type Here" maxlength="50" />
                   </div>
                 </div>
               </div>
@@ -525,27 +525,46 @@
             <div class="player__title-block title-wrapper">
               <h3 class="player__title section-title">video title</h3>
             </div>
-            <div class="player__video-block">
-              <div class="player__video-wrapper">
-                <video
-                  class="player__video"
-                  src="../media/video/vid.mp4"
-                  poster="../media/posters/poster1.jpg"
-                  width="1400"
-                  height="600"
-                  controls
-                ></video>
-                <button class="player__btn-play"></button>
+            <div class="player__main-content">
+              <div class="player__video-block">
+                <div class="player__video-wrapper">
+                  <video
+                    class="player__video"
+                    src="../media/video/vid.mp4"
+                    poster="../media/posters/poster1.jpg"
+                    width="1098"
+                    height="520"
+                    controls
+                  ></video>
+                  <button class="player__btn-play"></button>
+                </div>
+                <div class="player__advertising-block">
+                  <a class="player__advertising-link" href="#">
+                    <img class="player__advertising-img" width="300" height="250" src="../media/adversting/ads.png" alt=""/>
+                  </a>
+                  <a class="player__advertising-link" href="#">
+                    <img class="player__advertising-img" width="300" height="250" src="../media/adversting/ads.png" alt=""/>
+                  </a>
+                </div>
               </div>
               <div class="player__video-items">
                 <div class="player__items-top">
                   <div class="player__assessments">
                     <button class="player___item-button btn-like--active" type="button">
-                      <img src="../media/icons/like-icon.svg" alt="">
+                      <img src="../media/icons/like-icon.svg" alt="" />
                     </button>
-                    <p class="player__rating-star">93%</p>
+                    <div class="player__rating-wrapper">
+                      <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15.5 0L18.98 10.7102H30.2414L21.1307 17.3295L24.6107 28.0398L15.5 21.4205L6.38933 28.0398L9.8693 17.3295L0.758624 10.7102H12.02L15.5 0Z"
+                          fill="#DD1581"
+                        />
+                      </svg>
+
+                      <p class="player__rating-star">93%</p>
+                    </div>
                     <a class="player___item-button btn-disslike" href="#">
-                      <img src="../media/icons/dislike-icon.svg" alt="">
+                      <img src="../media/icons/dislike-icon.svg" alt="" />
                     </a>
                   </div>
                   <div class="player__video-info">
@@ -603,7 +622,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -624,7 +643,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -645,7 +664,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -666,7 +685,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -687,7 +706,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -708,7 +727,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -729,7 +748,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -750,7 +769,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -771,7 +790,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -792,7 +811,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -813,7 +832,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -834,7 +853,7 @@
                     loading="lazy"
                     width="329"
                     height="234"
-                >
+                  />
                   <div class="video-data-block">
                     <div class="rating-stars">95%</div>
                     <div class="video-quality">hd</div>
@@ -847,7 +866,7 @@
               <li class="categories__pagination-item item-prev-page">
                 <a href="#" class="categories__pagination-btn btn-prev">prev page</a>
                 <a href="#" class="categories__pagination-btn btn-prev-mobile">
-                  <img class="btn-prev-image" src="../media/icons/arrow-icon.svg" alt="">
+                  <img class="btn-prev-image" src="../media/icons/arrow-icon.svg" alt="" />
                 </a>
               </li>
               <li class="categories__pagination-item">
@@ -871,7 +890,7 @@
               <li class="categories__pagination-item item-next-page">
                 <a href="#" class="categories__pagination-btn btn-next">next page</a>
                 <a href="#" class="categories__pagination-btn btn-next-mobile">
-                  <img class="btn-next-image" src="../media/icons/arrow-icon.svg" alt="">
+                  <img class="btn-next-image" src="../media/icons/arrow-icon.svg" alt="" />
                 </a>
               </li>
             </ul>
@@ -887,162 +906,480 @@
             <div class="popular__searches">
               <ul class="popular__searches-list">
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
                 <li>
+                  <svg viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.5 0L14.133 8.01337L20.5348 2.92444L16.6349 10.1127L24.8101 10.3294L17.202 13.3291L23.3253 18.75L15.569 16.1575L16.7753 24.2462L12.5 17.2746L8.22475 24.2462L9.43096 16.1575L1.67468 18.75L7.79796 13.3291L0.189903 10.3294L8.3651 10.1127L4.46515 2.92444L10.867 8.01337L12.5 0Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                   <a href="#">text</a>
                 </li>
               </ul>
