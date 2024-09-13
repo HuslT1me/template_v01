@@ -943,6 +943,12 @@ a {
 }
 
 @media (width < 1023px) {
+  .header {
+    position: fixed;
+    z-index: 99;
+    inline-size: 100%;
+  }
+
   .header__wrapper-inner {
     display: none;
   }
@@ -1053,11 +1059,24 @@ a {
   }
 
   .header__input-wrapper {
+    margin-block-end: 200px;
     block-size: 50px;
   }
 
   .header__search-input {
     block-size: 50px;
+  }
+
+  .main {
+    padding-block-start: 61px;
+  }
+
+  .title-block {
+    padding-block-start: 10px;
+  }
+
+  .title-block--categories {
+    padding-block-start: 20px;
   }
 
   .player__video {
