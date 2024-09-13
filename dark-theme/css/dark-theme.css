@@ -999,7 +999,7 @@ a {
   }
 
   .header__burger-btn::before {
-    translate: 0 -12px;
+    translate: 0 -10px;
   }
 
   .header__burger-btn::after {
