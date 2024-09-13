@@ -394,6 +394,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-block-end: 20px;
+  padding-block-start: 20px;
 }
 
 .title-block--categories {
@@ -1075,10 +1077,6 @@ a {
     display: none;
   }
 
-  .title-block {
-    padding-block-start: 20px;
-  }
-
   .categories__item {
     box-shadow: 4px 4px 12px 0px #00000033;
   }
@@ -1137,7 +1135,6 @@ a {
   .title-block {
     row-gap: 10px;
     flex-direction: column;
-    margin-block-end: 20px;
   }
 
   .categories__advertising-wrapper {
