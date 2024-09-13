@@ -1,7 +1,8 @@
 const burgerBtn = document.querySelector(".header__burger-btn"),
   openMenu = document.querySelector(".mobile-menu"),
-  openCategoriesBtn = document.querySelector(".nav-link--categories"),
+  openCategoriesBtn = document.querySelector(".btn-categories"),
   categoriesPopup = document.querySelector(".open-categories-popup"),
+  popupLinks = document.querySelectorAll(".open-categories-popup a"),
   tabsVideo = document.querySelectorAll(".categories__tabs-item"),
   tabsContent = document.querySelectorAll(".categories__thumbnail"),
   btnCategory = document.querySelector(".btn-categories"),
@@ -28,8 +29,10 @@ const popupFunction = () => {
     e.stopPropagation();
 
     if (categoriesPopup.classList.contains("is-open")) {
+      console.log("close");
       closePopup();
     } else {
+      console.log("open");
       openPopup();
     }
   });
